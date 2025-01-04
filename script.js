@@ -7,7 +7,9 @@ document.querySelector("#pbotom").innerHTML=clutter;}
 makebuble();
 
 
+
 let timer =60 ;
+
 function runtimer(){
   let timer1 =  setInterval(function(){
     if(timer>0){
@@ -20,8 +22,15 @@ function runtimer(){
     }
   },1000)}
   runtimer()
+  if(timer==59){
+    alert("You just need to refresh the page to start again")
+  }
+  else if(timer==1){
+    alert("Refresh the page")
+
+  }
   function startimer(){
-    clearInterval(timer1)
+    clearInterval(timer)
   }
 
 
